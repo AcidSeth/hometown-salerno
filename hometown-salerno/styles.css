@@ -1,0 +1,131 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+EERIE BLACK: #182125
+PEACH: #F8C79B
+PEACH YELLOW: #FDDC9E
+POWDER BLUE: #ACBCD6
+VISTA BLUE: #7A92B6
+*/
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #FDDC9E;
+}
+
+.playfair-display-500 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue Medium", "Playfair Display", serif;
+    font-size: 1.5rem;
+    background-size: cover;
+    backdrop-filter: blur(12.5px);
+}
+
+
+h1, h2, h3, h4 {
+    font-family: "Playfair Display", serif;
+    }
+
+h3 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+body:hover {
+    backdrop-filter: blur(0px);
+}
+
+.highlight.peach {
+    padding: 5px 10px;
+    background: #F8C79B;
+}
+
+#hero {
+    padding: 80px 60px;
+    color: #182125;
+    text-align: center;
+    line-height: 160%;
+    background: url(images/salerno-sea-portrait.jpg);
+    background-size: cover;
+}
+
+#hero h2 {
+    text-shadow: 0 0 1px #FDDC9E;
+}
+
+#spots-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: #ACBCD6;
+    padding: 30px 0 0 0;
+}
+
+#section-minerva {
+    padding: 40px;
+    background-image: linear-gradient(#ACBCD6, #7A92B6);
+}
+
+#section-alleyways {
+    background-color: #FDDC9E;
+    padding: 80px 40px;
+    background-image: linear-gradient(#FDDC9E, #F8C79B);
+}
+
+.spot-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 60px;
+    font-family: "Helvetica Neue Medium";
+}
+
+.spot-wrapper.right {
+    flex-direction: row-reverse;
+}
+
+.spot-text-wrapper {
+    margin-top: -30px;
+    flex: 1;
+}
+
+.spot-img-wrapper {
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+.spot-img {
+    width: 100%;
+    border: 4px solid rgba(24, 33, 37, 0.5);
+    border-radius: 15px;
+    transition: 350ms;
+}
+
+.spot-img:hover {
+    scale: 1.02;
+    border: 4px solid rgba(24, 33, 37, 0.8);
+    border-radius: 10px;
+    transition: 350ms;
+}
+
+#footer {
+    padding: 5px 60px;
+    background: #182125;
+    color: #ACBCD6;
+    text-align: center;
+}
